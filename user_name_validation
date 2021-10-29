@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+int main() {
+    char str[100];
+    int len,i,flag;
+    flag=0;
+    scanf("%s",str);
+    len=strlen(str);
+    i=0;
+    
+    for(i=0;i<len;i++)
+    {
+        if(i==0)
+        {
+            if(str[i]=='.')
+            {
+                printf("%s",str);
+                printf(" invalid");
+                break;
+            }
+
+        }
+        else
+        {
+            if(isalnum(str[i]))
+            {
+                flag=1;
+                
+                
+            }
+        }
+        
+        
+    }
+    if(flag==1)
+    {
+        printf("%s",str);
+        printf(" valid");
+    }
+}
