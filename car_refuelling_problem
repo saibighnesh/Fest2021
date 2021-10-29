@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+void carrefuel(int arr[], int n, int max_dis, int a, int b)
+{
+    int current_fuel =max_dis;
+    int count_refuel=0;
+    
+    int tot_distance  = 0;
+    int i=0;
+    while(i<n)
+    {
+        while((arr[i+1]-arr[i]<=current_fuel))
+        {
+        current_fuel -= (arr[i+1]-arr[i]);
+        tot_distance += arr[i+1]-arr[i];
+        i++;
+        }
+        current_fuel=200;
+        cout<<i<<"->";
+        
+        count_refuel++;
+        
+        
+    }
+    cout<<"\ntomtal refills="<<count_refuel;
+}
+int main()
+{
+    int arr[] = {300,400, 450,580, 780, 900};
+    int n = 6;
+    int max_dis = 200;
+    int a =0;
+    int b= 1000;
+    carrefuel(arr,n,max_dis,a,b);
+    return 0;
+}
+
