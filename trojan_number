@@ -1,0 +1,65 @@
+#include <bits/stdc++.h>
+using namespace std;
+// function to check n is prefect power
+bool perfectPower(int n){
+    if (n == 1)
+        return true;
+    
+    for (int i = 2;i<=sqrt(n);i++){
+        int x = 2;
+        int p = pow(i, x);
+
+        while(p<=n && p>0){
+            if(p == n)
+                return true;
+            x++;
+            p = pow(i, x);
+        }
+    }
+    return false;
+}
+// function to check n is strong number
+bool strongNumber(int n) 
+{ 
+    unordered_map<int, int> count; 
+    while (n % 2 == 0) { 
+        n = n / 2; 
+        count[2]++; 
+    } 
+    for (int i = 3; i <= sqrt(n); i += 2) { 
+        while (n % i == 0) { 
+            n = n / i; 
+            count[i]++; 
+        } 
+    } 
+    if (n > 2) 
+        count[n]++; 
+  
+    int flag = 0; 
+    for (auto b : count) { 
+        if (b.second == 1) { 
+            flag = 1; 
+            break; 
+        } 
+    } 
+  
+    if (flag == 1) 
+        return false; 
+    else
+        return true; 
+} 
+bool trojan_number(int n){
+    if ( !perfectPower(n) && strongNumber(n))
+        return true;
+    else
+        return false;
+}
+int main(){
+    int n;
+    cout<<"Enter n value: ";
+    cin>>n;
+    if (trojan_number(n))
+        cout<<"It is a trojan number"<<endl;
+    else
+        cout<<"It is not a trojan number"<<endl;
+}
