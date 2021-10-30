@@ -1,0 +1,45 @@
+.col-sm-5{
+     height:775px;
+     margin-top:35px;
+     margin-left:325px;
+     background-color:white;
+	 border-radius: 7px;
+ }
+h1{
+     font-size:25pt;
+     padding-top:20px;
+ }
+#p3{
+    width: 100%;
+    height: 130%;
+    background-image: url('pic3.png');
+    background-size: 100% 100%;
+    border: 1px solid black;
+}
+#ip1{
+   border-radius: 7px;
+    border: 2px solid #D0D3D4;
+    padding: 15px; 
+    width: 270px;
+    height: 7px;
+}
+#ip2{   
+   
+    width: 200px;
+}
+
+
+#t1{
+   padding:7px;
+   margin-left:75px;
+}
+#p1{
+   font-size:10pt;
+   color:white;
+    background-color:#1279FC;
+	 border-radius: 7px;
+    border:2px;
+    padding:7px;
+	width:200px
+}
+

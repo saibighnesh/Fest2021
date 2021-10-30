@@ -1,0 +1,190 @@
+body {
+	font: bold 11px/1.5em Verdana;
+	}
+
+h1 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+	}
+
+hr {
+	border:none;
+	border-top:1px solid #CCCCCC;
+	height:1px;
+	margin-bottom:25px;
+	}
+	
+#header {
+            width: 98%;
+            height: 100px;
+            margin-left: 15px;
+            margin-right: 25px;
+            margin-top: 20px;
+            margin-bottom:10px;
+            background: #121212;
+            font-family:monospace;
+            font-size:32px;
+            padding-top: 55px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            font-style: italic;
+        }
+#container {
+            width: 1000px;
+            height: auto;
+            margin-left: 155px;
+            margin-right: 100px;
+            margin-top: 25px;
+            border-color: #121212;
+            border-width: 1px;
+            border-style: solid;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+.contents{
+            padding-top: 40px;
+            padding-left: 40px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        
+        
+/*input[type="file"]{
+          width: 240px;
+          height: 38px;
+          font-family:Arial, "Helvetica", sans-serif;
+          font-size:12px;
+          font-weight:bold;
+          color:#000;
+          text-decoration:none;
+          text-transform:uppercase;
+          text-align:center;
+          text-shadow:1px 1px 0px #37a69b;
+          padding-top:6px;
+		  padding-bottom:3px;
+          margin-left: 10px;
+          position:relative;
+          cursor:pointer;
+          border: none;  
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          border-bottom-left-radius:5px;
+        }*/
+input[type="submit"],[type="reset"]{
+  width:240px;
+  height:35px;
+  display:block;
+  font-family:Arial, "Helvetica", sans-serif;
+  font-size:12px;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  text-shadow:1px 1px 0px #37a69b;
+  padding-top:6px;
+  position:relative;
+  cursor:pointer;
+  border: none;  
+  background-color: #121212;
+  
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius:5px;
+  
+}
+input[type="submit"]:active {
+  top:3px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #31524d, 0px 5px 3px #999;
+}
+input[type="text"],select, textarea, [type="number"], [type="password"], [type="file"]{
+  border: 1px solid #78AB46;
+  border-radius: 4px;
+  box-shadow: 0 1px #fff;
+  box-sizing: border-box;
+  color: #696969;
+  height: 39px;
+  //margin: 31px 0 0 29px;
+  padding-left: 37px;
+  transition: box-shadow 0.3s;
+  width: 240px;
+}
+input[type="text"]:focus {
+  box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
+  outline: 0;
+}
+
+input[type="password"]:focus {
+  box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
+  outline: 0;
+}
+#tabs {
+	float:left;
+	width:100%;
+	//background:#EFF4FA;
+        background: #FFFFFF;
+	font-size:93%;
+	line-height:normal;
+	border-bottom:1px solid #121212;
+	}
+
+#tabs ul {
+	margin:0;
+	padding:10px 10px 0 50px;
+	list-style:none;
+	}
+
+#tabs li {
+	display:inline;
+	margin:0;
+	padding:0;
+	}
+
+#tabs a {
+	float:left;
+	background:url("tableft.gif") no-repeat left top;
+	margin:0;
+	padding:0 0 0 5px;
+	text-decoration:none;
+	}
+
+#tabs a span {
+	float:left;
+	display:block;
+	background:url("tabright.gif") no-repeat right top;
+	padding:5px 15px 4px 6px;
+	color:#FFF;
+	}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#tabs a span {float:none;}
+
+/* End IE5-Mac hack */
+#tabs a:hover span {
+	color:#FFF;
+	}
+
+#tabs a:hover {
+	background-position:0% -42px;
+	}
+
+#tabs a:hover span {
+	background-position:100% -42px;
+	}
+	
+#c{
+		 display:inline-block; 
+       display: inline; 
+	   margin-right:10px; 
+	}
