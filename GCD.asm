@@ -1,0 +1,23 @@
+DATA SEGMENT
+    NUM1 DW 11
+    NUM2 DW 77
+    GCD DW ?
+    DATA ENDS
+CODE SEGMENT
+    ASSUME DS:DATA CS:CODE
+    START:MOV AX,DATA
+    MOV DS,AX
+    MOV AX,NUM1           ; LOAD THE VALUE OF NUM1 INTO AX       
+    MOV BX,NUM2           ; LOAD THE VALUE OF NUM2 INTO BX      
+    WHILE:MOV DX,0        ; DEFINE A LOOP. INITIALIZE DX WITH 0    
+    MOV CX,BX             ; MOVE THE VALUE OF BX TO CX         
+    DIV BX                ; DIVIDE CX BY BX
+    MOV BX,DX             ; MOVE THE VALUE OF DX TO BX         
+    MOV AX,CX             ; MOVE THE VALUE OF CX TO AX
+    CMP BX,0              ; COMPARE BX AND 0          
+    JNE WHILE             ; IF IT DOES NOT SATISFY THE CONDITION,CONTINUE THE LOOP
+    MOV GCD,AX            ; MOVE THE RESULT TO GCD VARIABLE        
+    MOV AH,4CH
+    INT 21H
+    CODE ENDS
+END START           
